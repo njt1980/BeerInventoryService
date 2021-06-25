@@ -12,6 +12,8 @@ public interface InventoryRepository extends JpaRepository<Inventory, UUID>{
 	
 	List<Inventory> findAllByBeerId(UUID beerId);
 	
+	List<Inventory> findAllByUpc(String upc);
+	
 	Inventory findByUpc(String upc);
 	
 	Optional<Inventory> findById(UUID id);
