@@ -29,7 +29,7 @@ public class AllocationServiceImpl implements AllocationService {
 	@Override
     public Boolean allocateOrder(BeerOrderDto beerOrderDto) {
         log.debug("Allocating OrderId: " + beerOrderDto.getId());
-        System.out.println("Inventory Repo: is " + inventoryRepository);
+//        System.out.println("Inventory Repo: is " + inventoryRepository);
         System.out.println("OrderDto is : " + beerOrderDto);
         System.out.println("Allocating OrderId: " + beerOrderDto.getId());
         AtomicInteger totalOrdered = new AtomicInteger();
